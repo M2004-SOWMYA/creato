@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>YO_SOWMYA</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            animation: fadeInDown 1s ease-out;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        section {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        section h2 {
+            color: #4CAF50;
+            font-size: 2em;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .container div {
+            flex: 1;
+            margin: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .container div:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .profile-image img {
+            width: 100%;
+            border-radius: 50%;
+            animation: fadeInUp 1s ease-out;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to YO WORLD</h1>
+        <nav>
+            <a href="#about">About YO</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="container">
+            <div class="profile-image">
+                <img src="https://via.placeholder.com/300" alt="Profile Image">
+            </div>
+            <div class="profile-info">
+                <p>Hi, I'm <strong>SOWMYA</strong>, a developer with a passion for creativity, technology, and problem-solving. I love building interactive, dynamic web applications and learning new things every day!</p>
+                <button onclick="revealSurprise()">Click for a surprise!</button>
+                <p id="surprise" style="display:none; margin-top: 20px; color: #4CAF50; font-weight: bold;">Surprise! You have unlocked a secret skill: Persistence!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="container">
+            <div>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, GAMING, etc.</p>
+            </div>
+            <div>
+                <h3>Design</h3>
+                <p>UI/UX Design, Adobe XD</p>
+            </div>
+            <div>
+                <h3>Programming</h3>
+                <p>Python, Java, C++, C</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Check out some of my exciting projects:</p>
+        <ul>
+            <li><strong>Dynamic Note App:</strong> A tool for creating flowcharts and notes interactively.</li>
+            <li><strong>Code Learning Game:</strong> A game that combines coding puzzles and adventure.</li>
+            <li><strong>Portfolio Website:</strong> My personal portfolio showcasing my work and skills.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Let's get in touch:</p>
+        <ul>
+            <li>Email: your-email@example.com</li>
+            <li>LinkedIn: <a href="www.linkedin.com/in/sowmya-mungari-062a29244" target="_blank">LinkedIn Profile</a></li>
+            <li>GitHub: <a href="https://github.com/your-username" target="_blank">GitHub Profile</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SOWMYA - All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function revealSurprise() {
+            document.getElementById("surprise").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
